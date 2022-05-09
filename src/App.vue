@@ -1,17 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MenuComponent />
+    <BannerComponent />
+    <ServiceComponent />
+    <CountComponent />
+    <GreatWorkComponent/>
+    <FooterComponent/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MenuComponent from './components/Menu.vue'
+import BannerComponent from './components/Banner.vue'
+import ServiceComponent from './components/Service.vue'
+import CountComponent from './components/Count.vue'
+import GreatWorkComponent from './components/GreatWork.vue'
+import FooterComponent from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MenuComponent,
+    BannerComponent,
+    ServiceComponent,
+    CountComponent,
+    GreatWorkComponent,
+    FooterComponent
   }
 }
 </script>
@@ -23,6 +37,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
